@@ -10,12 +10,13 @@
 
 <body>
     <header>
-        <h1 class="titulo">Mónica</h1>
+         <img class ="logo" src="Logo.png" alt="logo" />        
         <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#trabajos">Mis proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+            <button class="nav-mobile" onclick="accion()"><img src="menu_16dp.png"></button>
+            <ul>                
+                <li><a class="item-menu desaparece" href="#inicio">Inicio</a></li>
+                <li><a class="item-menu desaparece" href="#trabajos">Mis proyectos</a></li>
+                <li><a class="item-menu desaparece" href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -25,21 +26,19 @@
             <div class="descripcion">
                <h1>Mónica García Rodríguez</h1>
             <p>                
-                Soy una apasionada por la tecnología, con ganas de
-                aprender nuevos retos. Soy dinámica, resolutiva y
-                responsable con facilidad de aprendizaje, con deseos de superación y
-                compromiso personal y social.                
+                Soy una apasionada de la tecnología, con un fuerte deseo de enfrentar nuevos retos. 
+                Me considero dinámica, resolutiva y responsable, con facilidad para aprender y 
+                un gran compromiso tanto personal como social, siempre enfocada en la superación constante.               
             </p> 
             <p>
-                He terminado el modulo de Desarrollo de Aplicaciones Web y actualmente estoy 
-                complementando mis estudios con el módulo de Desarrollo de Aplicaciones Multimedia.
+                He completado el módulo de Desarrollo de Aplicaciones Web y actualmente estoy complementando
+                mi formación con el módulo de Desarrollo de Aplicaciones Multimedia.
             </p>
             </div>
             
         </section>
         <section id="trabajos">
-                <p>Estos años de estudio he podido crear pequeños proyectos
-                    en HTML, CSS, .net core, Android, Flutter...
+                <p>Durante estos años de estudio, he desarrollado pequeños proyectos en HTML, CSS, .NET Core, Android, Flutter, entre otros.
                 </p>    
                 <ul class="iconos">
                     <li><a href="https://github.com/MonicaGarciaRodriguez/Flutter-"><img src="fluter.png"></a></li>
@@ -51,8 +50,8 @@
 
         </section>        
         <section id="contacto">
-                <p>Aqui os dejo el enlace de mis redes sociales y mi curriculum donde podeís ver mis proyectos
-                    y tecnologías estudiadas en los cursos</p>
+                <p>A continuación, les comparto los enlaces a mis redes sociales y mi currículum,
+                donde podrán ver mis proyectos y las tecnologías que he aprendido en los cursos.</p>
                 <ul>
                     <li><a href="https://www.linkedin.com/in/monica-garcía-rodriguez-12002a22a"><img
                             src="iconLinkedin.png" alt="linkedin"></a></li>
@@ -65,6 +64,14 @@
             <p>&#169; 2024 Mónica García Rodríguez</p>
         </footer>
     </main>
+    <script>
+        function accion(){
+            var ancla = document.getElementsByClassName('item-menu');
+            for ( var i = 0; i < ancla.length; i++){
+                ancla[i].classList.toggle('desaparece');
+            }
+        }
+    </script>
 </body>
 
 </html>
